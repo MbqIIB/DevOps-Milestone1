@@ -7,6 +7,7 @@ Team Members:
 3. Shivam Gulati
 
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails.
+### Initial Jenkins Setup
 
 #### Step 1: Install Jenkins
 
@@ -32,9 +33,22 @@ You will be required to enter the admin password once to start jenkins, which ca
    Source Code Management-> Select Git-> Enter the Git Repository URL.
 3. Under Build Environment->check 'Provide Node & npm bin/ folder to PATH'-> choose the NodeJS installation
 
+### Build Server Tasks
+
+#### TASK 1: Ability to trigger a build in response to git commit via git post-commit hook
+
+#### TASK 2: The ability to execute a build job via a script or build manager (e.g., shell, maven), which ensures a clean build each time
+
+#### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email
+
+#### TASK 4: The ability to have multiple jobs corresponding to multiple branches in a repository
+
+#### TASK 5: The ability to track and display a history of past builds
+
 Sources:
 
 1. https://en.wikipedia.org/wiki/Amazon_Web_Services
+
 #### Screencast
 
 ![Screencast]()
