@@ -1,8 +1,9 @@
 # DevOps-Milestone1: Configure build Server
 
-Name: Shivam Gulati
-
-Email: sgulati2@ncsu.edu
+Team Members:
+1. Ayush Gupta
+2. Nishtha Garg
+3. Shivam Gulati
 
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails.
 
