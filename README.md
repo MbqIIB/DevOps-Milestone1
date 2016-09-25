@@ -20,14 +20,14 @@ You will be required to enter the admin password once to start jenkins, which ca
 1. Plugins requirement
 ..1. Go to Manage Jenkins->Manage Plugin->Install NodeJS Plugin.
 ..2. Make sure you already have Github and Email plugin installed, else install them as well.
-2.Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
-3.Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
+2. Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
+3. Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
 
 #### Step 3: Creating a New Job
 
-1.Create new job. Give it a name. Choose Freestyle Project.
-2.For configuration of Job:
-Source Code Management-> Select Git-> Enter the Git Repository URL.
+1. Create new job. Give it a name. Choose Freestyle Project.
+2. For configuration of Job
+   Source Code Management-> Select Git-> Enter the Git Repository URL.
 3. Under Build Environment->check 'Provide Node & npm bin/ folder to PATH'-> choose the NodeJS installation
 
 Sources:
