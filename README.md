@@ -18,7 +18,7 @@ We have used Jenkins to configure the build server. It would also respond autmat
 
 You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
 
-#### Step 2:Configure Jenkins
+#### Step 2: Configure Jenkins
 
 1. Plugins requirement
 ..1. Go to Manage Jenkins->Manage Plugin->Install NodeJS Plugin.
@@ -37,7 +37,7 @@ You will be required to enter the admin password once to start jenkins, which ca
 
 #### TASK 1: Ability to trigger a build in response to git commit via git post-commit hook
 
-#### TASK 2: The ability to execute a build job via a script or build manager (e.g., shell, maven), which ensures a clean build each time
+#### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
 
 #### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email
 
@@ -47,7 +47,8 @@ You will be required to enter the admin password once to start jenkins, which ca
 
 Sources:
 
-1. https://en.wikipedia.org/wiki/Amazon_Web_Services
+1. https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins
+2. https://www.nczonline.net/blog/2015/10/triggering-jenkins-builds-by-url/
 
 #### Screencast
 
