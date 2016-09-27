@@ -32,6 +32,8 @@ You will be required to enter the admin password once to start jenkins, which ca
 #### Step 3: Creating a New Job
 
 1. Create a new job. Give it a name. Choose Freestyle Project.
+	
+	![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/NewJob.JPG)
 2. For configuration of Job
    Source Code Management-> select Git under Source Code Management-> Enter your project's Git Repository URL.
 3. Under Build Environment-> select "Provide Node & npm bin/ folder to PATH"-> choose the NodeJS installation.
@@ -73,12 +75,16 @@ npm test
 
 1. Go to Manage Jenkins -> Configure System.
 2. Setup Extended E-mail Notification and E-mail notification.
+
+	![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/Email1.JPG)
 3. For both of the above, we configured gmail smtp server. 
 4. Enter the SMTP details and credentials and click Save.
 5. Follow below screenshots for reference.
    ![Configure Email 1]()
    ![Configure Email 1]()
 6. Go the Configure page of your job-> Post-build Actions-> Post Build Action-> Choose Editable Email Notification.
+
+	![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/PostBuildAction.JPG)
 7. Now, when you build you will get the email notification for the corresponding build.
 
 Note: If the recipient is @gmail, you need to turn on the security access by using the link https://www.google.com/settings/security/lesssecureapps
