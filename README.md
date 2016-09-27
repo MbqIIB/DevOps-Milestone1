@@ -61,7 +61,7 @@ curl http://<username>:<user_token>@localhost:8080/job/<job_name>/build?token=<j
 1. Select your job and go to "Configure" option from the left pane.
 2. In General tab, under Build sub-tab, select "Add a Build Step".
 3. Choose "Execute Shell"
-4. Here, you can write your script to be executed for Build process. We use NPM to install modules and run tests during each build.
+4. Here, you can write your script to be executed for Build process. We use NPM to install dependencies modules from package.json file and run tests during each build.
 
 ```
 rm -rf node_modules
