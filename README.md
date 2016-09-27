@@ -63,7 +63,17 @@ npm install
 npm test
 ```
 
-#### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email
+#### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email.
+
+1. Go to Manage Jenkins -> Configure System.
+2. Setup Extended E-mail Notification and E-mail notification.
+3. For both of the above, we configured gmail smtp server. 
+4. Enter the SMTP details and credentials and click Save.
+5. Follow below screenshots for reference.
+![Configure Email 1]()
+![Configure Email 1]()
+
+Note: If the recipient is @gmail, you need to turn on the security access by using the link https://www.google.com/settings/security/lesssecureapps
 
 #### TASK 4: The ability to have multiple jobs corresponding to multiple branches in a repository
 
