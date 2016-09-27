@@ -17,7 +17,7 @@ We have used Jenkins to configure the build server. It would also respond autmat
 2. Installation on Linux/Ubuntu
 	[Detailed Instuctions for Linux/Ubuntu](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
-#### Step 2: Other Installations
+#### Step 2: Other setups
 
 1. Install Tomcat 8.
 	[Guide for Instructions](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
@@ -35,7 +35,7 @@ We have used Jenkins to configure the build server. It would also respond autmat
 2. Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
 3. Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
 
-#### Step 4: Creating a New Job
+#### Step 4: Creating a New Job in Jenkins
 
 1. Create a new job. Give it a name. Choose Freestyle Project.
 	
@@ -118,7 +118,7 @@ fi
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/4.gif)
 
 
-#### TASK 5: The ability to track and display a history of past builds
+#### TASK 5: The ability to track and display a history of past builds (a simple list works) via http
 
 1. The entire build history is visible in Jenkins. Users can also follow the below URL to view the build history over HTTP.
 2. Replace **<job_name>** by actual job name setup in Jenkins.
