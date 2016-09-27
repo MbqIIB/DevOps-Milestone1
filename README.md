@@ -25,7 +25,7 @@ We have used Jenkins to configure the build server. It would also respond autmat
 3. Once everything is setup, open web browser and go to URL http://localhost:8080/ to run Jenkins.
 4. You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
 
-#### Step 2: Configure Jenkins
+#### Step 3: Configure Jenkins
 
 1. Plugins requirement
    1. Go to Manage Jenkins->Manage Plugin->Install NodeJS Plugin.
@@ -35,7 +35,7 @@ We have used Jenkins to configure the build server. It would also respond autmat
 2. Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
 3. Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
 
-#### Step 3: Creating a New Job
+#### Step 4: Creating a New Job
 
 1. Create a new job. Give it a name. Choose Freestyle Project.
 	
