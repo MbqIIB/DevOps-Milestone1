@@ -38,6 +38,9 @@ https://github.com/shivamgulati1991/SampleCode
    ![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/Plugin%20screen.JPG)
 2. Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
 3. Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
+4. To see your user token.
+	1. Go to People -> Your user profile.
+	2. Select Configure from left pane. Click "Show API token" from API token header.
 
 #### Step 4: Creating a New Job in Jenkins
 
@@ -69,9 +72,10 @@ curl http://<username>:<user_token>@localhost:8080/job/<job_name>/build?token=<j
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
 
 1. Select your job and go to "Configure" option from the left pane.
-2. In General tab, under Build sub-tab, select "Add a Build Step".
-3. Choose "Execute Shell"
-4. Here, you can write your script to be executed for Build process. We use NPM to install dependencies modules from package.json file and run tests during each build.
+2. Go to Build Triggers. Check "Trigger builds remotely" and setup a token.
+3. In General tab, under Build sub-tab, select "Add a Build Step".
+4. Choose "Execute Shell".
+5. Here, you can write your script to be executed for Build process. We use NPM to install dependencies modules from package.json file and run tests during each build.
 
 ```
 rm -rf node_modules
