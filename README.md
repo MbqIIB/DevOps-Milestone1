@@ -124,7 +124,7 @@ fi
 #### TASK 5: The ability to track and display a history of past builds (a simple list works) via http
 
 1. The entire build history is visible in Jenkins. Users can also follow the below URL to view the build history over HTTP.
-2. Replace **<job_name>** by actual job name setup in Jenkins.
+2. Replace **job_name** by the job name which you have configured in Jenkins.
 
 ```
 http://localhost:8080/job/<job_name>/api/json?pretty=true
