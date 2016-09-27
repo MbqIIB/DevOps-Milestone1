@@ -22,8 +22,8 @@ You will be required to enter the admin password once to start jenkins, which ca
 #### Step 2: Configure Jenkins
 
 1. Plugins requirement
-..1. Go to Manage Jenkins->Manage Plugin->Install NodeJS Plugin.
-..2. Make sure you already have Github and Email plugin installed, else install them as well.
+   1. Go to Manage Jenkins->Manage Plugin->Install NodeJS Plugin.
+   2. Make sure you already have Github and Email plugin installed, else install them as well.
 2. Go to Global Tool Configuration-> Select NodeJS install automatically-> Give any Name and Save.
 3. Go to Manage Jenkins-> Configure Global Security. Under Authorization, choose, "Anyone can do anything". Save.
 
