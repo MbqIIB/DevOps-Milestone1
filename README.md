@@ -2,9 +2,9 @@
 
 Team Members:
 
-1. Ayush Gupta
-2. Nishtha Garg
-3. Shivam Gulati
+1. Ayush Gupta - agupta25@ncsu.edu
+2. Nishtha Garg - ngarg@ncsu.edu
+3. Shivam Gulati - sgulati2@ncsu.edu
 
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
 
@@ -13,14 +13,14 @@ We have used Jenkins to configure the build server. It would also respond autmat
 #### Step 1: Install Jenkins
 
 1. Installation on Mac
-[Detailed Instructions for Mac](https://wiki.wocommunity.org/display/documentation/Installing+and+Configuring+Jenkins)
+	[Detailed Instructions for Mac](https://wiki.wocommunity.org/display/documentation/Installing+and+Configuring+Jenkins)
 2. Installation on Linux/Ubuntu
-[Detailed Instuctions for Linux/Ubuntu](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+	[Detailed Instuctions for Linux/Ubuntu](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
 #### Step 2: Other Installations
 
 1. Install Tomcat 8.
-[Guide for Instructions](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
+	[Guide for Instructions](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
 2. Make sure you have NPM or or project managers install as per your requirement.
 3. Once everything is setup, open web browser and go to URL http://localhost:8080/ to run Jenkins.
 4. You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
