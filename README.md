@@ -6,7 +6,8 @@ Team Members:
 2. Nishtha Garg
 3. Shivam Gulati
 
-We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails.
+We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
+
 ### Initial Jenkins Setup
 
 #### Step 1: Install Jenkins
@@ -50,6 +51,17 @@ curl http://<username>:<user-token>@localhost:8080/job/<job-name>/build?token=<j
 ```
 
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
+
+1. Select your job and go to "Configure" option from the left pane.
+2. In General tab, under Build sub-tab, select "Add a Build Step".
+3. Choose "Execute Shell"
+4. Here, you can write your script to be executed for Build process. We use NPM to install modules and run tests during each build.
+
+```
+rm -rf node_modules
+npm install
+npm test
+```
 
 #### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email
 
