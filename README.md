@@ -49,6 +49,8 @@ You will be required to enter the admin password once to start jenkins, which ca
 
 curl http://<username>:<user_token>@localhost:8080/job/<job_name>/build?token=<job_token>
 ```
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/1.gif)
+
 
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
 
@@ -62,6 +64,8 @@ rm -rf node_modules
 npm install
 npm test
 ```
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/2.gif)
+
 
 #### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email.
 
@@ -76,6 +80,9 @@ npm test
 7. Now, when you build you will get the email notification for the corresponding build.
 
 Note: If the recipient is @gmail, you need to turn on the security access by using the link https://www.google.com/settings/security/lesssecureapps
+
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/3.gif)
+
 
 #### TASK 4: The ability to have multiple jobs corresponding to multiple branches in a repository
 
@@ -94,6 +101,9 @@ elif [ `git rev-parse --abbrev-ref HEAD` == "release" ]; then
 fi
 ```
 
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/4.gif)
+
+
 #### TASK 5: The ability to track and display a history of past builds
 
 1. The entire build history is visible in Jenkins. Users can also follow the below URL to view the build history over HTTP.
@@ -102,6 +112,9 @@ fi
 ```
 http://localhost:8080/job/<job_name>/api/json?pretty=true
 ```
+
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/5.gif)
+
 
 Sources:
 
