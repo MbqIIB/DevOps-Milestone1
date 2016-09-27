@@ -83,7 +83,7 @@ npm test
 #### TASK 3: The ability to determine failure or success of a build job and trigger an external event  by email.
 
 1. Go to Manage Jenkins -> Configure System.
-2. Setup Extended E-mail Notification and E-mail notification.
+2. Setup Extended E-mail Notification and E-mail notification. The below screen shows setup for Extended Configuration. Both the setups are same.
 
 	![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone1/blob/master/Screens/Email1.JPG)
 3. For both of the above, we configured gmail smtp server. 
