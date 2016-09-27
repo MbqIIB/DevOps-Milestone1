@@ -8,6 +8,9 @@ Team Members:
 
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
 
+Sample project used for setup:
+https://github.com/shivamgulati1991/SampleCode
+
 ### Build Section
 
 #### Step 1: Install Jenkins
