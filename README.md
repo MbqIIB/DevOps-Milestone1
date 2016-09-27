@@ -28,14 +28,26 @@ You will be required to enter the admin password once to start jenkins, which ca
 
 #### Step 3: Creating a New Job
 
-1. Create new job. Give it a name. Choose Freestyle Project.
+1. Create a new job. Give it a name. Choose Freestyle Project.
 2. For configuration of Job
-   Source Code Management-> Select Git-> Enter the Git Repository URL.
-3. Under Build Environment->check 'Provide Node & npm bin/ folder to PATH'-> choose the NodeJS installation
+   Source Code Management-> select Git under Source Code Management-> Enter your project's Git Repository URL.
+3. Under Build Environment-> select "Provide Node & npm bin/ folder to PATH"-> choose the NodeJS installation.
+4. Additionally, you can also setup multiple branches for the same job.
+5. Click Save.
+5. Test run a build - Go to Jobs and click "Build Now". The progress would be depicted as an animated circle. Blue implies a successful build and Red implies a failure.
 
 ### Build Server Tasks
 
 #### TASK 1: Ability to trigger a build in response to git commit via git post-commit hook
+
+1. When the user creates a new commit to the repository, Git executes the script created for post-commit hook.
+2. We trigger the build in Jenkins whenever user does a commit. Our script looks like:
+
+```
+#!/bin/bash
+
+curl http://<username>:<user-token>@localhost:8080/job/<job-name>/build?token=<job-token>
+```
 
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
 
