@@ -58,6 +58,7 @@ https://github.com/shivamgulati1991/SampleCode
 
 #### TASK 1: Ability to trigger a build in response to git commit via git post-commit hook
 
+1. Go to your Job -> Configure -> Build Triggers. Check "Trigger builds remotely" and setup a token.
 1. When the user creates a new commit to the repository, Git executes the script created for post-commit hook.
 2. We trigger the build in Jenkins whenever user does a commit. Our script looks like:
 
@@ -72,7 +73,7 @@ curl http://<username>:<user_token>@localhost:8080/job/<job_name>/build?token=<j
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
 
 1. Select your job and go to "Configure" option from the left pane.
-2. Go to Build Triggers. Check "Trigger builds remotely" and setup a token.
+2. This was done in Task1. If not, go to Build Triggers. Check "Trigger builds remotely" and setup a token.
 3. In General tab, under Build sub-tab, select "Add a Build Step".
 4. Choose "Execute Shell".
 5. Here, you can write your script to be executed for Build process. We use NPM to install dependencies modules from package.json file and run tests during each build.
