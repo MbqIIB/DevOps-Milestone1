@@ -128,9 +128,3 @@ Sources:
 
 1. https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins
 2. https://www.nczonline.net/blog/2015/10/triggering-jenkins-builds-by-url/
-
-#### Screencast
-
-![Screencast]()
-
-[Link to GIF] ()
