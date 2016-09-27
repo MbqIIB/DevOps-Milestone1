@@ -47,7 +47,7 @@ You will be required to enter the admin password once to start jenkins, which ca
 ```
 #!/bin/bash
 
-curl http://<username>:<user-token>@localhost:8080/job/<job-name>/build?token=<job-token>
+curl http://<username>:<user_token>@localhost:8080/job/<job_name>/build?token=<job_token>
 ```
 
 #### TASK 2: The ability to execute a build job via a script or build manager which ensures a clean build each time
@@ -70,14 +70,38 @@ npm test
 3. For both of the above, we configured gmail smtp server. 
 4. Enter the SMTP details and credentials and click Save.
 5. Follow below screenshots for reference.
-![Configure Email 1]()
-![Configure Email 1]()
+   ![Configure Email 1]()
+   ![Configure Email 1]()
+6. Go the Configure page of your job-> Post-build Actions-> Post Build Action-> Choose Editable Email Notification.
+7. Now, when you build you will get the email notification for the corresponding build.
 
 Note: If the recipient is @gmail, you need to turn on the security access by using the link https://www.google.com/settings/security/lesssecureapps
 
 #### TASK 4: The ability to have multiple jobs corresponding to multiple branches in a repository
 
+1. We saw earlier how to create a job.
+2. Create multiple jobs using the same procedure and with different branches. In this case, the branch are **dev** and **release**.
+3. We have two jobs, **demo1-dev** for dev branch and **demo1-release** for release branch.
+4. We use the existing post-commit script and modify it to trigger builds as per the branch we are working on.
+
+```
+#!/bin/bash
+
+if [ `git rev-parse --abbrev-ref HEAD` == "dev" ]; then
+	curl http://<username>:<user_token>@localhost:8080/job/<dev_job_name>/build?token=<job_token>
+elif [ `git rev-parse --abbrev-ref HEAD` == "release" ]; then
+	curl http://<username>:<user_token>@localhost:8080/job/<release_job_name>/build?token=<job_token>
+fi
+```
+
 #### TASK 5: The ability to track and display a history of past builds
+
+1. The entire build history is visible in Jenkins. Users can also follow the below URL to view the build history over HTTP.
+2. Replace **<job_name>** by actual job name setup in Jenkins.
+
+```
+http://localhost:8080/job/<job_name>/api/json?pretty=true
+```
 
 Sources:
 
