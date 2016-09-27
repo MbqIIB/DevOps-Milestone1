@@ -8,7 +8,7 @@ Team Members:
 
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
 
-### Initial Jenkins Setup
+### Build Section
 
 #### Step 1: Install Jenkins
 
@@ -17,7 +17,13 @@ We have used Jenkins to configure the build server. It would also respond autmat
 2. Installation on Linux/Ubuntu
 [Detailed Instuctions for Linux/Ubuntu](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
-You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
+#### Step 2: Other Installations
+
+1. Install Tomcat 8.
+[Guide for Instructions](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
+2. Make sure you have NPM or or project managers install as per your requirement.
+3. Once everything is setup, open web browser and go to URL http://localhost:8080/ to run Jenkins.
+4. You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
 
 #### Step 2: Configure Jenkins
 
