@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ `git rev-parse --abbrev-ref HEAD` == "dev" ]; then
+    curl http://<username>:<user_token>@localhost:8080/job/demo1-dev/build?token=<job_token>
+elif [ `git rev-parse --abbrev-ref HEAD` == "release" ]; then
+    curl http://<username>:<user_token>@localhost:8080/job/demo1-release/build?token=<job_token>
+fi
