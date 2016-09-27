@@ -26,7 +26,7 @@ https://github.com/shivamgulati1991/SampleCode
 	[Guide for Instructions](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
 2. Make sure you have NPM or or project managers install as per your requirement.
 3. Once everything is setup, open web browser and go to below URL to run Jenkins.
-	https://github.com/shivamgulati1991/SampleCode
+	http://localhost:8080/
 4. You will be required to enter the admin password once to start jenkins, which can be found in secret of your Jenkins system directory folder but you may need to first give it permissions to unlock by modifying properties.
 
 #### Step 3: Configure Jenkins
