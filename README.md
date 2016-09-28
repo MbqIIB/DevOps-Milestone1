@@ -6,9 +6,9 @@ Team Members:
 2. Nishtha Garg - ngarg@ncsu.edu
 3. Shivam Gulati - sgulati2@ncsu.edu
 
-All team members contributed throughout the progress. More specifically, Ayush focused towards initial Jenkins setup and dependencies. Nishtha looked into Jenkins job setup and email configuration for triggers and Shivam looked into hooks and branch builds alongwith screencast.
-
 We have used Jenkins to configure the build server. It would also respond autmatically to post commit events and send build status emails. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
+
+All team members contributed throughout the progress. More specifically, Ayush focused towards initial Jenkins setup and dependencies. Nishtha looked into Jenkins job setup and email configuration for triggers and Shivam looked into hooks and branch builds alongwith screencast.
 
 Sample project used for setup:
 https://github.com/shivamgulati1991/SampleCode
